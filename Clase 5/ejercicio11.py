@@ -1,0 +1,7 @@
+dineroDepositado= float(input("Introduzca la cantidad de dinero que desea depositar en la cuenta de ahorro: "))
+yearOne= round((dineroDepositado * 1.04),1)
+yearTwo= round((dineroDepositado * 1.04**2),1)
+yearThree= round((dineroDepositado * 1.04**3),1)
+print("La cantidad de ahorro tras el primer año es de:", yearOne)
+print("La cantidad de ahorro tras el segundo año es de:", yearTwo)
+print("La cantidad de ahorro tras el tercer año es de:", yearThree)
