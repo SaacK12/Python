@@ -9,16 +9,17 @@ def buscar (nombre):
             print("Los cursos de este alumno son:",alumno["curso"])
             encontrado = True
             cantidadAlunos= cantidadAlunos + 1
-    if not encontrado:
+    if cantidadAlunos > 0:
+        print("Se ha encontrado", cantidadAlunos, "alumnos con este nombre")
+    elif not encontrado:
         print("El usuario introducido no se encontro")
-    print("Se ha encontrado", cantidadAlunos, "alumnos con este nombre")
 
 ####Verificar Nombres#####
 
 def verificarNombres(nombre):
     while True:
         if nombre.isalpha(): #Esto verifica que el nombre sea solo letras
-            break
+            return nombre
         else:
             print("Por favor, ingrese un nombre válido para el alumno.")
             nombre= input("Ingrese el nombre del alumno: ")
@@ -28,7 +29,7 @@ def verificarNombres(nombre):
 def verificarCurso(nmr):
     while True:
             if nmr.isdigit(): #Esto verifica que el curso sea un numero entero
-                break
+                return nmr
             else:
                 print("Por favor, ingrese un número válido para la cantidad de curso.")
                 nmr= input("Ingrese la cantidad de curso: ")
@@ -54,10 +55,10 @@ while True:
     
     if numero == "1":
         alumno= input("Ingrese el nombre del alumno: ")
-        verificarNombres(alumno)
+        alumno= verificarNombres(alumno) #retorna el valor valido
         alumno= str(alumno)
         curso= input("Ingrese la cantidad de curso: ")
-        verificarCurso(curso)
+        curso= verificarCurso(curso)
         curso = int(curso)
         diccionario(lista, alumno=alumno, curso=curso)
         print ("alumno añadido exitosamente!")
@@ -66,6 +67,7 @@ while True:
     
     if numero == "3": 
         nombre= input("Introduzca el nombre: ")
+        nombre= verificarNombres(nombre)
         buscar(nombre)
         
     ###### Salir ######
