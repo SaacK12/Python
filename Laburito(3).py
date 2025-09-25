@@ -3,14 +3,14 @@ def diccionario (lista, **kwargs):
     lista.append(kwargs) #Esta funcion agrega ese diccionario al final de la lista. (Sin pisarlo)
 def buscar (nombre):
     encontrado= False
-    cantidadAlunos= 0
+    cantidadAlumnos= 0
     for alumno in lista:
         if alumno["alumno"] == nombre:
             print("Los cursos de este alumno son:",alumno["curso"])
             encontrado = True
-            cantidadAlunos= cantidadAlunos + 1
-    if cantidadAlunos > 0:
-        print("Se ha encontrado", cantidadAlunos, "alumnos con este nombre")
+            cantidadAlumnos= cantidadAlumnos + 1
+    if cantidadAlumnos > 0:
+        print("Se ha encontrado", cantidadAlumnos, "alumnos con este nombre")
     elif not encontrado:
         print("El usuario introducido no se encontro")
 
