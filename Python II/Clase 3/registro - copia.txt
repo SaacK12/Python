@@ -1,0 +1,8 @@
+19-10-2025 12:30:03 - poepe ha Ingresado.
+19-10-2025 12:30:07 - gabry ha Egresado.
+19-10-2025 12:33:36 - tu vieja ha Ingresado.
+19-10-2025 12:46:34 - sexo ha Ingresado.
+19-10-2025 12:46:37 - fernandez ha Egresado.
+19-10-2025 12:49:14 - sexo ha Egresado.
+IN 21-10-2025 13:06:04 - Gus ha Ingresado.
+OUT 21-10-2025 13:06:04 - Gus se ha retidado. Ventas: $69

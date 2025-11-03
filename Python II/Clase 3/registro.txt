@@ -1,0 +1,12 @@
+16-10-2025 17:26:52 - messi ha Ingresado.
+16-10-2025 17:26:55 - ronaldo} ha Egresado.
+19-10-2025 15:05:15 - Gabry ha Ingresado.
+19-10-2025 15:05:19 - Alejandro ha Egresado.
+IN 21-10-2025 13:08:32 - pepe ha Ingresado.
+IN 21-10-2025 13:17:40 - Sion ha Ingresado.
+OUT 21-10-2025 13:17:56 - Sion se ha retidado. Ventas: $12
+IN 21-10-2025 13:18:05 - Juan ha Ingresado.
+IN 21-10-2025 13:18:51 - juan ha Ingresado.
+OUT 21-10-2025 13:19:19 - juan se ha retidado. Ventas: $12
+IN 21-10-2025 13:19:24 - sion ha Ingresado.
+OUT 21-10-2025 13:20:02 - sion se ha retidado. Ventas: $10
