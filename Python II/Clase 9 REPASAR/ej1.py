@@ -1,29 +1,30 @@
 import tkinter as tk
-
-def verificar():
-    seleccion= [opciones[i] for i in range (len(opciones)) if variables[i].get() == 1]
-    etiqueta_seleccion.config(text=f"seleccionaste: {','.join(seleccion)}")
-
+##Crear ventana##
 ventana= tk.Tk()
-ventana.title("Selección de checkboxes")
-ventana.geometry("1000x1000")
+ventana.title("CHECKBOXES EXAMPLE")
+ventana.geometry("800x600")
 ventana.resizable(0,0)
-## checkbox
-opciones= ["Opcion 1", "Opcion 2", "Opcion 3", "Opcion 4"]
-variables= [tk.IntVar() for v in opciones] #creara cada variable para guardar el estado dle checkbox
+ventana.iconbitmap("C:\\Users\\Pc\\Documents\\Laburito\\Python\\Python II\\Clase 9 REPASAR\\sh2.ico")
 
-## Crear checkbuttons 
-for i in range (len(opciones)):
-    casilla= tk.Checkbutton(ventana, text=opciones[i], variable=variables[i])
-    casilla.pack(anchor="w")
+## Crear checkboxes ##
+lista=["Opcion 1", "Opcion 2", "Opcion 3", "Opcion 4"]
+var= [tk.IntVar() for i in range(len(lista))]
+## ##
+
+def mostrar_seleccion():
+    seleccion= [lista[i] for i in range (len(lista)) if var[i].get() == 1]
+    etiqueta.config(text=f"Seleccionaste: {', '.join(seleccion)}")
+## Crear checkboxes ##
+for i in range(len(lista)):
+    check= tk.Checkbutton(ventana, text=lista[i], variable=var[i])
+    check.pack()
 
 
-boton= tk.Button(ventana, text="Mostrar resultado",command= verificar)
-boton.pack()
+boton= tk.Button(text="¡Presioname!",command=mostrar_seleccion)
+boton.place(x=350, y=150, width=100, height=25)
 
-#etiqueta
-etiqueta_seleccion= tk.Label(ventana, text="")
-etiqueta_seleccion.pack()
-
-##Mostrar la ventana
+etiqueta= tk.Label(bg="pink")
+etiqueta.place(x=40, y= 100)
+##Mantener ventana##
 ventana.mainloop()
+## ##
